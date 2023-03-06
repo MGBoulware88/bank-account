@@ -20,7 +20,7 @@ class BankAccount:
         return self
 
     def display_account_info(self):
-        print(f"Your {self.name} account balance is {self.balance}.")
+        print(f"Your {self.name} account balance is ${self.balance}.")
         return self
 
     def yield_interest(self):
@@ -32,7 +32,7 @@ class BankAccount:
     @classmethod
     def display_all_accounts_info(cls):
         for account in cls.all_accounts:
-            print(f"Your {account.name} balance is {account.balance}.")
+            print(f"Your {account.name} balance is ${account.balance}.")
         return cls
 
 checking = BankAccount("Checking",500)
